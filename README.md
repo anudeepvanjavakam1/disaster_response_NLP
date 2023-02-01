@@ -1,6 +1,6 @@
 # Disaster Response Pipeline Project
 
-![Intro Pic](screenshots/intro.png)
+![Intro Pic](screenshots/intro.PNG)
 
 
 ## Table of Contents
@@ -24,9 +24,9 @@ The web app (embedded with machine learning pipeline) lets an emergency worker i
 
 This project is divided in the following key sections:
 
-1. Processing data, building an ETL pipeline to extract data from source, clean the data and save them in a SQLite DB
-2. Build a machine learning pipeline to train the which can classify text message in various categories
-3. Run a web app which can show model results in real time
+1. Processing data, building an ETL pipeline to extract data from source, clean the data and save them in a SQLite DB.
+2. Build a machine learning pipeline to train the which can classify text message in various categories.
+3. Run a web app which can show model results in real time.
 
 <a name="getting_started"></a>
 ## Getting Started
@@ -58,14 +58,14 @@ git clone https://github.com/anudeepvanjavakam1/disaster_response_NLP.git
 2. Run the following command in the app's directory to run your web app.
     `python run.py`
 
-3. Go to http://0.0.0.0:3001/
+3. Enter the http address displayed in the terminal in a browser to see the app.
 
 <a name="material"></a>
 ### Additional Material
 
 In the **data** and **models** folder you can find two jupyter notebook that will help you understand how the model works step by step:
-1. **ETL Preparation Notebook**: learn everything about the implemented ETL pipeline
-2. **ML Pipeline Preparation Notebook**: look at the Machine Learning Pipeline developed with NLTK and Scikit-Learn
+1. **ETL Preparation Notebook**: learn everything about the implemented ETL pipeline.
+2. **ML Pipeline Preparation Notebook**: look at the Machine Learning Pipeline developed with NLTK and Scikit-Learn.
 
 You can use **ML Pipeline Preparation Notebook** to re-train the model or tune it through a dedicated Grid Search section.
 
@@ -73,11 +73,11 @@ You can use **ML Pipeline Preparation Notebook** to re-train the model or tune i
 ### Important Files
 **app/templates/***: templates/html files for web app
 
-**data/process_data.py**: Extract Train Load (ETL) pipeline used for data cleaning, feature extraction, and storing data in a SQLite database
+**data/process_data.py**: Extract Transform Load (ETL) pipeline used for data cleaning, feature extraction, and storing data in a SQLite database.
 
-**models/train_classifier.py**: A machine learning pipeline that loads data, trains a model, and saves the trained model as a .pkl file for later use
+**models/train_classifier.py**: A machine learning pipeline that loads data, trains a model, and saves the trained model as a .pkl file for predicting a live message later.
 
-**run.py**: This file can be used to launch the Flask web app used to classify disaster messages
+**run.py**: This file can be used to launch the Flask web app used to classify disaster messages.
 
 <a name="authors"></a>
 ## Authors
@@ -97,14 +97,14 @@ You can use **ML Pipeline Preparation Notebook** to re-train the model or tune i
 <a name="screenshots"></a>
 ## Screenshots
 
-1. This is an example of a message we can type to test the performance of the model
+1. This is an example of a message we can type to test the performance of the model.
 
-![Sample Input](screenshots/sample_input.png)
+![Sample Input](screenshots/sample_input.PNG)
 
-2. After clicking **Classify Message**, we can see the categories which the message belongs to highlighted in green
+2. After clicking **Classify Message**, we can see the categories which the message belongs to highlighted in green.
 
-![Sample Output](screenshots/sample_output.png)
+![Sample Output](screenshots/sample_output.PNG)
 
-3. The main page shows some graphs about training dataset, provided by Figure Eight
+3. The main page shows some graphs about training dataset. Dataset is provided by Figure Eight.
 
-![Main Page](screenshots/main_page.png)
+![Main Page](screenshots/main_page.PNG)
