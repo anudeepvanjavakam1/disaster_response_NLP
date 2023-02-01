@@ -110,8 +110,8 @@ You can use **ML Pipeline Preparation Notebook** to re-train the model or tune i
 
 ![Main Page](screenshots/main_page.PNG)
 
-<a name="descripton"></a>
-## Improvement Ideas
+<a name="Ideas"></a>
+## Ideas to Improve
 
 In this dataset, there are 36 categories (output classes) which have different number of samples and they are imbalanced. For example, related category has most no. of samples (> 5000) while missing_people category has only 68 samples. This affects the performance of the model as it tries to assign 'related' category to a live message more frequently than a true category that is useful.
 
@@ -121,7 +121,7 @@ In this dataset, there are 36 categories (output classes) which have different n
  
  - **Oversampling:** Oversampling to replicate minority class instances randomly may overfit and lead to inaccurate predictions on test data. Another advanced technique is SMOTE that generates synthetic samples by taking each minority class sample and introducing synthetic examples along the line segments joining any/all of the k minority class nearest neighbors. Unfortunately, this technique doesn’t work well with text data because the numerical vectors that are created from the text are very high dimensional.
  
- - **Merging minority classes:** This dataset has multiple classes that have overlapping features. It may be better to merge these multiple minority classes (reducing imbalance) to improve the model performance. For example, 1. weather related and other weather categories, 2. medical help, medical products and hospitals
+ - **Merging minority classes:** This dataset has multiple classes that have overlapping features. It may be better to merge these multiple minority classes (reducing imbalance) to improve the model performance but this may offer only marginal gains as minority classes have extremely few samples. For example, 1. weather related and other weather categories, 2. medical help, medical products and hospitals
 
 - **Data Augmentation:** For text, data augmentation can be done by tokenizing document into a sentence, shuffling and rejoining them to generate new texts, or replacing adjectives, verbs etc by its a synonym to generate different text with the same meaning. Any pre-trained word embedding or NLTK’s wordnet can be used to find the synonym of a word. One of the ways to achieve this is with Google Translation(google trans python package). This is one of the useful techniques to expand the count of minority groups. Here, we translate the given sentence to ‘non-English’ language and then again translating to ‘English’. In this way, the significant details of the input message are maintained but the order of words / sometimes new words with similar meaning are introduced as a new record and thus boosting the count of insufficient class.
 
