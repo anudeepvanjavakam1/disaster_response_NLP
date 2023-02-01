@@ -14,6 +14,7 @@
 4. [License](#license)
 5. [Acknowledgement](#acknowledgement)
 6. [Screenshots](#screenshots)
+7. [Ideas to Improve](#ideas)
 
 <a name="descripton"></a>
 ## Description
@@ -109,10 +110,12 @@ You can use **ML Pipeline Preparation Notebook** to re-train the model or tune i
 
 ![Main Page](screenshots/main_page.PNG)
 
-**Improvement Ideas**
+<a name="descripton"></a>
+## Improvement Ideas
+
 In this dataset, there are 36 categories (output classes) which have different number of samples and they are imbalanced. For example, related category has most no. of samples (> 5000) while missing_people category has only 68 samples. This affects the performance of the model as it tries to assign 'related' category to a live message more frequently than a true category that is useful.
 
-Approaches to improve the model or deal with the imbalanced classes:
+**Approaches to improve the model or deal with the imbalanced classes:**
 
  - **Gathering more data** for categories that have extremely few samples by scraping more data or by working with more agencies to share real-life messages.
  
